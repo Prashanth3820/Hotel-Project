@@ -51,6 +51,21 @@ public class BaseClass1 {
 		return path;
 	}
 	
+	private void presEnter() {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+	public void frameById(String id) {
+
+		driver.switchTo().frame(id);
+	}
+	
+	public void switchToFrameByWebElement(WebElement element) {
+		driver.switchTo().frame(element);
+	}
+	
 
 	public void elementSendKeysEnter(WebElement element, String data) {
 		elementVisibility(element);
@@ -103,7 +118,7 @@ public class BaseClass1 {
 		}
 	}
 
-	public String getProjectPath() {
+	public static String getProjectPath() {
 		String property = System.getProperty("user.dir");
 		return property;
 	}

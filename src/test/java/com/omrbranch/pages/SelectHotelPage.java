@@ -22,6 +22,9 @@ public class SelectHotelPage extends BaseClass1 {
 	
 	@FindBy(xpath="//div[@id='hotellist']//a")
 	private WebElement btnContinue;
+	
+	@FindBy(xpath="//label[text()='Price low to high']")
+	private WebElement clkL2H;
 
 	public WebElement getSelectHotel() {
 		return selectHotel;
@@ -38,6 +41,23 @@ public class SelectHotelPage extends BaseClass1 {
 	public WebElement getBtnContinue() {
 		return btnContinue;
 	}
+	
+	public WebElement getClkL2H() {
+		return clkL2H;
+	}
+
+	public String getSelctHotelMsg() {
+		String eText = elementGetText(selectHotel);
+		System.out.println(eText);
+		return eText;
+
+	}
+	
+	public void userClickSort() {
+		elementClick(clkL2H);
+	}
+	
+	
 	
 	
 

@@ -1,6 +1,6 @@
 package com.omrbranch.pagemanager;
 
-import com.omrbranch.pages.BookHotelPage;
+import com.omrbranch.pages.BookHotelPage; 
 import com.omrbranch.pages.BookingConfirmPage;
 import com.omrbranch.pages.LoginPage;
 import com.omrbranch.pages.MyBookingPage;
@@ -35,8 +35,6 @@ public class PageObjectManager {
 	public MyBookingPage getMyBookingPage() {
 		return (myBookingPage==null) ? myBookingPage = new MyBookingPage() : myBookingPage;
 	}
-	
-	
 	
 
 }
